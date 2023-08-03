@@ -1,0 +1,127 @@
+@import url('https://discordstyles.github.io/SoftX/SoftX.css');
+
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap");
+/* Theme imports */
+@import url("https://discordstyles.github.io/SoftX/RadialGlow.css"); /* RadialGlow effect for avatars. | Remove this line to disable. */
+@import url("https://discordstyles.github.io/SoftX/VerticalUserArea.css"); /* Vertical user area. Moves the mute, defean and settings icons to the server list. | Remove this line to disable. */
+@import url("https://discordstyles.github.io/Addons/windows-titlebar.css"); /* Windows titlebar. | Remove this line to disable. */
+:root {
+  /*
+   * SoftX variables
+   */
+  --background-image: url("https://i.imgur.com/vIVBOUo_d.png?maxwidth=9999&fidelity=png"); /* Background image | URL MUST BE A DIRECT LINK (ending in .jpg, .jpeg, .png, .gif) */
+  --background-blur: 0px; /* Blur intensity of --background-image | Must end in px | Default: 0px */
+  --accent: 116, 0, 148; /* Colour used around the app. | Values are in R,G,B format. | Default: 0, 231, 169 */
+  --channels-width: 300px; /* Width of the channels list. | Default: 300px */
+  --guilds-width: 105px; /* Width of the server list. | Default: 105px */
+  --members-width: 280px; /* Width of the members list. | Default: 280px */
+  --server-size: 50px; /* Size of the servers inside the server list. | Default: 50px */
+  --chat-avatar-size: 32px; /* Size of the chat avatars. | Default: 32px */
+  --glow-intensity: 1; /* Intensity of the glow used around the app. | Set to 0 to disable the glow. | Decimals allowed | Default: 1 */
+  --opacity: 0.26; /* Opacity of overall app. | Default: .85 */
+  --font: "Inter"; /* Custom font | Default: 'Inter' */
+  --avatar-roundness: 50%; /* Roundness for avatars. | 0% = Square, 50% = Circle | Default: 50% */
+  --server-roundness: 50%; /* Roundness for servers. | 0% = Square, 50% = Circle | Default: 50% */
+  /*
+   * RadialStatus veriables
+   */
+  --rs-small-spacing: 2px; /* Spacing between profile image and outer ring on small icons (e.g. member list) | Default: 2px */
+  --rs-medium-spacing: 4px; /* Spacing between profile image and outer ring on medium icons (e.g. user popout) | Default: 4px */
+  --rs-large-spacing: 4px; /* Spacing between profile image and outer ring on medium icons (e.g. user popout fullscreen) | Default: 4px */
+  --rs-small-width: 1.5px; /* Ring width (follows same sizing as above) | Default: 1.5px */
+  --rs-medium-width: 2px; /* Default: 2px */
+  --rs-large-width: 2px; /* Default: 2px */
+  /* Customizable colors */
+  --rs-online-color: #43b581; /* Default: #43b581 */
+  --rs-idle-color: #faa61a; /* Default: #faa61a */
+  --rs-dnd-color: #f04747; /* Default: #f04747 */
+  --rs-offline-color: #636b75; /* Default: #636b75 */
+  --rs-streaming-color: #643da7; /* Default: #643da7 */
+  --rs-invisible-color: #747f8d; /* Default: #747f8d */
+  --rs-phone-color: var(--rs-online-color); /* Color of the phone for mobile users | Default: var(--rs-online-color) */
+  --rs-phone-visible: block; /* Visibility of the phone for mobile users | Default: block */
+}
+  /*Disable home icon*/
+  .homeIcon-r0w4ny {
+    display: none;
+    width: 28px;
+    height: 20px;
+  }
+  
+  /*Custom background for home icon and for guilds with no photos*/
+  .childWrapper-1j_1ub {
+    background: linear-gradient(rgba(170, 0, 158, 0.4),rgba(170, 0, 158, 0.3)) , var(--loop-gif-diamond) 50% 100%/cover !important;
+    color: var(--text-normal);
+  }
+
+  div[class*="typeWindows-"]::after {
+    content: '🔮ETERNITY ACREPI🔮';
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    padding: 0 15px;
+    z-index: -1;
+    width: 100%;
+    height: 20px;
+    background: transparent;
+    color: var(--Main-Color);
+    margin-left: 885px; /* Vous pouvez ajuster cette valeur selon votre besoin */
+  }
+   /*Hide discord text from titlebar*/
+    .wordmarkWindows-2dq6rw {
+      display: none;
+    }
+:root {
+    /*Global variables that were made/edited by me*/
+    --Main-Color: rgb(250, 0, 158); /*main master color*/
+    --Secondary-Color: rgb(170, 0, 158); /*secondary color*/
+    --Third-Color: rgb(110,0,158); /*third color*/
+    --Color-4: rgb(90,0,158); /*color number 4*/
+    --Color-5: hsla(320, 40%, 40%, 0.366); /*color number 5*/
+    --Color-6: hsla(320, 50%, 50%, 0.466); /*color number 6*/
+    --Grey-Color: rgb(31, 31, 31); /*grey color*/
+    --Black: rgb(0,0,0); /*black color*/
+    --White: rgb(255,255,255); /*white color*/
+    --White-Second: rgb(175, 175, 175); /*white but gray color*/
+    --Red-color: rgb(255,0,0); /*red color*/
+    --Neon-Line: 150,0,150; /*master neon color*/
+    --Neon-Line2: 255,0,0; /*red neon line*/
+    --Neon-Rgb: var(--Neon-Line); /*neon node #1*/
+    --Neon-Rgb2: var(--Neon-Line2); /*red noen node #2*/
+    --Cards-Background-Color: rgb(63, 0, 64);/*darker cards color*/
+    /*Backgrounds*/
+    --master-background: url('https://github.com/xy-nyxy/AnotherEternity/blob/main/background/Master%20Background.png?raw=true'); /*master background*/
+    --background-floating: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.2)) , var(--master-background)50% 50%/cover !important; /*background used in normal discord's code*/
+    /*Gifs for popouts and stuff*/
+    --loop-gif: url('https://github.com/xy-nyxy/AnotherEternity/blob/main/background/loop-gif.gif?raw=true'); /*Used in files background*/
+    --loop-gif2: url('https://github.com/xy-nyxy/AnotherEternity/blob/main/background/loop-gif2.gif?raw=true'); /*Used in guild popouts > User popout*/
+    --loop-gif3: url('https://github.com/xy-nyxy/AnotherEternity/blob/main/background/loop-gif3.gif?raw=true'); /*Used in guild popouts > Mentioned card*/
+    --loop-gif-diamond: url('https://github.com/xy-nyxy/AnotherEternity/blob/main/background/loop-gif-diamond.gif?raw=true'); /*Used on home icon*/
+    --logo-photo: url('https://raw.githubusercontent.com/xy-nyxy/AnotherEternity/main/background/Wumpus%20Pink.gif'); /*Used in Friends tab when no friends are online*/
+    /*Borders*/
+    --border1: 2px solid var(--Secondary-Color); /*master border*/
+    --border2: 2px solid var(--Third-Color); /*border 2*/
+    --border3: 2px solid rgb(90,0,150); /*border 3*/
+    
+    /*Others variables*/
+    /*Radial status*/
+    --rs-small-spacing: 0px;
+    --rs-medium-spacing: 0.1px;
+    --rs-large-spacing: 0px;
+    --rs-small-width: 2px;
+    --rs-medium-width: 3px;
+    --rs-large-width: 4px;
+    --rs-avatar-shape: 50%;
+    --rs-online-color: #21df00;
+    --rs-idle-color: #faa81a;
+    --rs-dnd-color: #ee0000;
+    --rs-offline-color: #636b75;
+    --rs-streaming-color: #b300fa;
+    --rs-invisible-color: #747f8d;
+    --rs-phone-color: var(--rs-online-color);
+    --rs-phone-visible: none;
+  }
